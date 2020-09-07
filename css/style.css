@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 .attribution {
   font-size: 11px;
   text-align: center; }
@@ -5,10 +6,13 @@
 .attribution a {
   color: #3e52a3; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 100;
   font-size: 14px;
   color: #6d7f97;
@@ -27,19 +31,75 @@ body {
   width: 45%;
   margin: auto;
   display: grid;
-  grid-template-rows: repeat(2, 50%);
-  grid-template-columns: 40% 60%;
-  height: 60vh;
+  grid-template-rows: 45% 55%;
+  grid-template-columns: 50% 50%;
+  height: 65vh;
   border-radius: 5px;
   background-color: white;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
 
 .one {
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  padding: 1.9rem 4.1rem; }
 
 .two {
   background-color: #2ab2af;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: start;
+  color: #e5eff5;
+  padding: 3rem; }
+
+.three {
+  background-color: rgba(42, 178, 175, 0.8);
+  color: #e5eff5;
+  padding: 3rem; }
+
+.main-title {
+  color: #2ab2af;
+  font-size: 2.3rem;
+  margin-top: 0.8rem;
+  font-weight: 700; }
+
+.sub-title {
+  color: #c0df34;
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+.main-text {
+  color: #98a6bd; }
+
+.dollar {
+  font-size: 2.4rem;
+  font-weight: 700; }
+
+.access {
+  font-size: 1.4rem; }
+
+.btn {
+  width: 100%;
+  padding: 1.4rem;
+  border-radius: 1.3rem;
+  border: none;
+  background-color: #c0df34;
+  color: #e5eff5; }
+
+.subscription {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem; }
+
+.per-month {
+  color: #e5eff5; }
+
+.why {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem; }
+
+li {
+  list-style: none; }
+
+ul {
+  padding: 0; }
