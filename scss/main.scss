@@ -16,10 +16,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
-  font-weight: 100;
-  font-size: 14px;
   color: hsl(214, 17%, 51%);
   box-sizing: border-box;
+  height: 100vh;
 }
 
 .outer-div {
@@ -30,7 +29,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 .container {
@@ -39,7 +38,7 @@ body {
   display: grid;
   grid-template-rows: 45% 55%;
   grid-template-columns: 50% 50%;
-  height: 65vh;
+  height: 70vh;
   border-radius: 5px;
   background-color: white;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
@@ -63,41 +62,53 @@ body {
 .three {
   background-color: hsla(179, 62%, 43%, 0.8);
   color: hsl(204, 43%, 93%);
-  padding: 3rem;
+  padding: 2rem 3.3rem;
 }
 
 .main-title {
   color: rgb(42, 178, 175);
   font-size: 2.3rem;
   margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
   font-weight: 700;
 }
 
 .sub-title {
   color: hsl(71, 73%, 54%);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 700;
+  margin-bottom: 0.8rem;
 }
 
 .main-text {
   color: hsl(218, 22%, 67%);
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .dollar {
-  font-size: 2.4rem;
+  font-size: 2.9rem;
   font-weight: 700;
+  color: white;
+  margin-right: 1.6rem;
 }
 .access {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 .btn {
   width: 100%;
   padding: 1.4rem;
-  border-radius: 1.3rem;
+  border-radius: 0.9rem;
   border: none;
   background-color: hsl(71, 73%, 54%);
   color: hsl(204, 43%, 93%);
+  font-size: 1.4rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: hsla(71, 73%, 54%, 0.9);
 }
 
 .subscription {
@@ -108,18 +119,34 @@ body {
 
 .per-month {
   color: hsl(204, 43%, 93%);
+  font-size: 1.6rem;
 }
 
 .why {
   font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1.5rem;
 }
 
 li {
   list-style: none;
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
 }
 
 ul {
   padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .attribution {
+    display: none;
+  }
 }
