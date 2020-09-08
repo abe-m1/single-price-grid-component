@@ -61,26 +61,26 @@ body {
     }
 
     &--sub-title {
-      color: hsl(71, 73%, 54%);
+      color: $brightYellow;
       font-size: 1.7rem;
       font-weight: 700;
       margin-bottom: 0.8rem;
     }
 
     &--main-text {
-      color: hsl(218, 22%, 67%);
+      color: $grayishBlue;
       font-size: 1.5rem;
       line-height: 1.5;
     }
   }
 
   &__left-content {
-    background-color: hsl(179, 62%, 43%);
+    background-color: $cyan;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    color: hsl(204, 43%, 93%);
+    color: $lightGray;
     padding: 3rem;
     border-bottom-left-radius: 5px;
 
@@ -95,7 +95,7 @@ body {
     }
 
     &--per-month {
-      color: hsl(204, 43%, 93%);
+      color: $lightGray;
       font-size: 1.6rem;
     }
 
@@ -109,7 +109,7 @@ body {
 
   &__right-content {
     background-color: hsla(179, 62%, 43%, 0.8);
-    color: hsl(204, 43%, 93%);
+    color: $lightGray;
     padding: 2rem 3.3rem;
     border-bottom-right-radius: 5px;
 
@@ -126,8 +126,8 @@ body {
   padding: 1.4rem;
   border-radius: 0.9rem;
   border: none;
-  background-color: hsl(71, 73%, 54%);
-  color: hsl(204, 43%, 93%);
+  background-color: $brightYellow;
+  color: $lightGray;
   font-size: 1.4rem;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
