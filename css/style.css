@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
   height: 100vh; }
 
-.outer-div {
+.background {
   background-color: #e5eff5;
   background-size: contain;
   display: flex;
@@ -36,51 +36,56 @@ body {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
-
-.one {
-  grid-column: 1/-1;
-  padding: 1.9rem 4.1rem; }
-
-.two {
-  background-color: #2ab2af;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  color: #e5eff5;
-  padding: 3rem; }
-
-.three {
-  background-color: rgba(42, 178, 175, 0.8);
-  color: #e5eff5;
-  padding: 2rem 3.3rem; }
-
-.main-title {
-  color: #2ab2af;
-  font-size: 2.3rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  font-weight: 700; }
-
-.sub-title {
-  color: #c0df34;
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem; }
-
-.main-text {
-  color: #98a6bd;
-  font-size: 1.5rem;
-  line-height: 1.5; }
-
-.dollar {
-  font-size: 2.9rem;
-  font-weight: 700;
-  color: white;
-  margin-right: 1.6rem; }
-
-.access {
-  font-size: 1.7rem; }
+  .container__upper-content {
+    grid-column: 1/-1;
+    padding: 1.9rem 4.1rem; }
+    .container__upper-content--main-title {
+      color: #2ab2af;
+      font-size: 2.3rem;
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700; }
+    .container__upper-content--sub-title {
+      color: #c0df34;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem; }
+    .container__upper-content--main-text {
+      color: #98a6bd;
+      font-size: 1.5rem;
+      line-height: 1.5; }
+  .container__left-content {
+    background-color: #2ab2af;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #e5eff5;
+    padding: 3rem;
+    border-bottom-left-radius: 5px; }
+    .container__left-content--access {
+      font-size: 1.7rem; }
+    .container__left-content--subscription {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem; }
+    .container__left-content--per-month {
+      color: #e5eff5;
+      font-size: 1.6rem; }
+    .container__left-content--dollar {
+      font-size: 2.9rem;
+      font-weight: 700;
+      color: white;
+      margin-right: 1.6rem; }
+  .container__right-content {
+    background-color: rgba(42, 178, 175, 0.8);
+    color: #e5eff5;
+    padding: 2rem 3.3rem;
+    border-bottom-right-radius: 5px; }
+    .container__right-content--why {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem; }
 
 .btn {
   width: 100%;
@@ -94,20 +99,6 @@ body {
 
 .btn:hover {
   background-color: rgba(192, 223, 52, 0.9); }
-
-.subscription {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 0.6rem; }
-
-.per-month {
-  color: #e5eff5;
-  font-size: 1.6rem; }
-
-.why {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem; }
 
 li {
   list-style: none;
@@ -124,5 +115,9 @@ ul {
     height: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem; }
+    .container__left-content {
+      border-bottom-left-radius: 0; }
+    .container__right-content {
+      border-bottom-left-radius: 5px; }
   .attribution {
     display: none; } }

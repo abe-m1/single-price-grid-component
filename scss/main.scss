@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+//variables
+$cyan: hsl(179, 62%, 43%);
+$brightYellow: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -21,10 +27,8 @@ body {
   height: 100vh;
 }
 
-.outer-div {
-  // background: url(../../images/bg-desktop.png) right bottom no-repeat,
-  //   $ver;
-  background-color: hsl(204, 43%, 93%);
+.background {
+  background-color: $lightGray;
   background-size: contain;
   display: flex;
   align-items: center;
@@ -32,6 +36,7 @@ body {
   height: 100%;
   margin: 0;
 }
+
 .container {
   width: 45%;
   margin: auto;
@@ -42,58 +47,78 @@ body {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
 
-.one {
-  grid-column: 1/-1;
-  padding: 1.9rem 4.1rem;
-}
+  &__upper-content {
+    grid-column: 1/-1;
+    padding: 1.9rem 4.1rem;
 
-.two {
-  background-color: hsl(179, 62%, 43%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  color: hsl(204, 43%, 93%);
-  padding: 3rem;
-}
+    &--main-title {
+      color: rgb(42, 178, 175);
+      font-size: 2.3rem;
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
 
-.three {
-  background-color: hsla(179, 62%, 43%, 0.8);
-  color: hsl(204, 43%, 93%);
-  padding: 2rem 3.3rem;
-}
+    &--sub-title {
+      color: hsl(71, 73%, 54%);
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
 
-.main-title {
-  color: rgb(42, 178, 175);
-  font-size: 2.3rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-  font-weight: 700;
-}
+    &--main-text {
+      color: hsl(218, 22%, 67%);
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
 
-.sub-title {
-  color: hsl(71, 73%, 54%);
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
-}
+  &__left-content {
+    background-color: hsl(179, 62%, 43%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: hsl(204, 43%, 93%);
+    padding: 3rem;
+    border-bottom-left-radius: 5px;
 
-.main-text {
-  color: hsl(218, 22%, 67%);
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
+    &--access {
+      font-size: 1.7rem;
+    }
 
-.dollar {
-  font-size: 2.9rem;
-  font-weight: 700;
-  color: white;
-  margin-right: 1.6rem;
-}
-.access {
-  font-size: 1.7rem;
+    &--subscription {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    &--per-month {
+      color: hsl(204, 43%, 93%);
+      font-size: 1.6rem;
+    }
+
+    &--dollar {
+      font-size: 2.9rem;
+      font-weight: 700;
+      color: white;
+      margin-right: 1.6rem;
+    }
+  }
+
+  &__right-content {
+    background-color: hsla(179, 62%, 43%, 0.8);
+    color: hsl(204, 43%, 93%);
+    padding: 2rem 3.3rem;
+    border-bottom-right-radius: 5px;
+
+    &--why {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 .btn {
@@ -109,23 +134,6 @@ body {
 
 .btn:hover {
   background-color: hsla(71, 73%, 54%, 0.9);
-}
-
-.subscription {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 0.6rem;
-}
-
-.per-month {
-  color: hsl(204, 43%, 93%);
-  font-size: 1.6rem;
-}
-
-.why {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
 }
 
 li {
@@ -145,6 +153,14 @@ ul {
     height: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    &__left-content {
+      border-bottom-left-radius: 0;
+    }
+
+    &__right-content {
+      border-bottom-left-radius: 5px;
+    }
   }
   .attribution {
     display: none;
